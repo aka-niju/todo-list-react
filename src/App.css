@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.769);
+}
+
+.task-form {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+.task-form > h1 {
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+
+.task-form > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  outline: none;
+  padding: 0.5rem;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.769);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: black;
+}
+
+.tasks {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0.822);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: rgba(147, 135, 135, 0.413);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tasks > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2px;
+}
